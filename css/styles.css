@@ -2,6 +2,7 @@
    --primary-text-color: #757575;
    --secondary-text-color: #212121;
    --accent-color: #2196F3;
+   --accent-color-2:#188CE8;
    --primary-bg-color:#FFFFFF;
    --text-color-1:#FFFFFF;
    --text-color-2:#000000;
@@ -32,7 +33,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.hiden {
+.visually-hidden {
    position: absolute;
    white-space: nowrap;
    width: 1px;
@@ -43,7 +44,7 @@ p {
    clip: rect(0 0 0 0);
    clip-path: inset(50%);
    margin: -1px;
-}
+} 
     
 
 img {
@@ -259,6 +260,10 @@ body {
    text-decoration: none;
    cursor: pointer;
 }
+.button:hover,
+.button:focus {
+   background-color: var(--accent-color-2);
+}
 .hero1 {
    color: var(--text-color-1);
    font-weight: 900;
@@ -335,7 +340,7 @@ body {
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
 }
-.team .item:not(last-child) {
+.team .item:not(:last-child) {
    margin-right: 30px;
 }
 .people {
@@ -457,9 +462,9 @@ body {
 
 .logo-footer {
    margin-bottom: 20px;
-   display: block;
+   display: inline-block;
 }
-.contact-footer .item:not(last-child) {
+.contact-footer .item:not(:last-child) {
    margin-bottom: 9px;
 }
 .social-text {
@@ -468,6 +473,7 @@ body {
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   margin-bottom: 20px;
 
    color: var(--primary-bg-color);
 }
@@ -496,8 +502,10 @@ body {
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.1);;
    fill: var(--primary-bg-color);
-   margin-top: 20px;
 }
+/* .item-icon-footer {
+   margin-top: 20px;
+} */
 .social-list-footer .item-icon-footer:not(:nth-child(4n)) {
    margin-right: 10px;
 }
@@ -557,9 +565,9 @@ body {
    display: flex;
    flex-wrap: wrap;
    justify-content:center;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
 }
-.button1 .item:not(last-child) {
+.button1 .item:not(:last-child) {
    margin-right: 8px;
 }
 /* section-oll */
@@ -573,14 +581,15 @@ body {
 } */
 .oll .item {
    width: 370px;
-   background: var(--text-color-1);
-   border: 1px solid var(--border-color);
+   background: var(--text-color-1);;
 }
 .oll .item:nth-last-child(-n + 3) {
    margin-bottom: 0;
 }
 .item-list {
    padding: 20px 24px;
+   border: 1px solid var(--border-color);
+   border-top: none;
 }
 
 
