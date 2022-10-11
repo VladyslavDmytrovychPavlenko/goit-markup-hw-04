@@ -118,6 +118,7 @@ body {
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
+   margin-bottom: 16px;
 }
 
 /* header */
@@ -358,7 +359,6 @@ body {
    height: 44px;
    border-radius: 50%;
    fill: var(--icon-grey-color);
-   margin-top: 16px;
 }
 .social-list .item-icon:not(:nth-child(4n)) {
    margin-right: 10px;
